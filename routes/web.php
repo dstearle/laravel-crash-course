@@ -23,3 +23,8 @@ Route::get('/hello', function () {
     // return view('welcome');
     return '<h1>Hello There!</h1>';
 });
+
+// About Page
+Route::get('/about', function () {
+    return view('pages.about');
+});
