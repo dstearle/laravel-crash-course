@@ -27,9 +27,10 @@ Route::get('/hello', function () {
 });
 
 // About Page
-Route::get('/about', function () {
-    return view('pages.about');
-});
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
+Route::get('/about', [PagesController::class, 'about']);
 
 // Dynamic Page
 // Route::get('/users/{id}', function ($id) {
