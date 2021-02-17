@@ -25,4 +25,11 @@ class PagesController extends Controller
 
     }
 
+    // The view for the Services Page
+    public function services() {
+
+        return view('pages.services');
+
+    }
+
 }

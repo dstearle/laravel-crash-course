@@ -14,23 +14,16 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Index Page
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/', [PagesController::class, 'index']);
+
+
+
+// ****** Basic Examples ******
 
 // Hello Page
 Route::get('/hello', function () {
     // return view('welcome');
     return '<h1>Hello There!</h1>';
 });
-
-// About Page
-// Route::get('/about', function () {
-//     return view('pages.about');
-// });
-Route::get('/about', [PagesController::class, 'about']);
 
 // Dynamic Page
 // Route::get('/users/{id}', function ($id) {
@@ -39,3 +32,24 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/users/{id}/{name}', function ($id, $name) {
     return 'This is user ' . $name . ' with an ID of ' . $id;
 });
+
+
+
+
+
+//  ****** Standard Routes ******
+
+// Index Page
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [PagesController::class, 'index']);
+
+// About Page
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
+Route::get('/about', [PagesController::class, 'about']);
+
+// Services Page
+Route::get('/services', [PagesController::class, 'services']);
