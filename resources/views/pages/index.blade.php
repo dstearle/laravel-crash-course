@@ -14,7 +14,9 @@
 
         <body>
 
-            <h1>Test</h1>
+            <h1>Laravel Crash Course</h1>
+
+            <p>A basic Laravel application to brush up on the basics...</p>
             
         </body>
 
