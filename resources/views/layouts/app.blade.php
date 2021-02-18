@@ -20,6 +20,8 @@
 
         <body>
 
+            @include('inc.navbar')
+
             <div class="container">
 
                 {{-- Content --}}
