@@ -27,7 +27,10 @@ class PagesController extends Controller
     // The view for the About Page
     public function about() {
 
-        return view('pages.about');
+        // String to be passed into the view
+        $title = 'About Us';
+
+        return view('pages.about')->with('title', $title);
 
     }
 

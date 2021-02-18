@@ -2,8 +2,10 @@
 
 @section('content')
 
-    <h1>About</h1>
+    {{-- Title --}}
+    <h1><?php echo $title ?></h1>
 
+    {{-- Content --}}
     <p>This is the about page...</p>
     
 @endsection
