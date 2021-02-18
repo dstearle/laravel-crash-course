@@ -9,12 +9,12 @@
     @if(count($services) > 0)
 
         {{-- List of items in the services array --}}
-        <ul>
+        <ul class="list-group">
 
             {{-- Foreach loop in the services array --}}
             @foreach ($services as $service)
 
-                <li>{{ $service }}</li>
+                <li class="list-group-item">{{ $service }}</li>
                 
             @endforeach
 
