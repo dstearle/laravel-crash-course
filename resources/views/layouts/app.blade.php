@@ -10,18 +10,22 @@
             <!-- Title -->
             <title>{{config('app.name', 'Laravel Crash Course')}}</title>
 
-             <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+            <!-- Scripts -->
+            <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+            <!-- Styles -->
+            <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         </head>
 
         <body>
 
-            {{-- Content --}}
-            @yield('content')
+            <div class="container">
+
+                {{-- Content --}}
+                @yield('content')
+
+            </div>
             
         </body>
 
