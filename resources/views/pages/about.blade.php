@@ -1,23 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.app')
 
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@section('content')
 
-        <head>
+    <h1>About</h1>
 
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-
-            <!-- Title -->
-            <title>{{config('app.name', 'Laravel Crash Course')}}</title>
-
-        </head>
-
-        <body>
-
-            <h1>About</h1>
-
-            <p>This is the about page...</p>
-            
-        </body>
-
-    </html>
+    <p>This is the about page...</p>
+    
+@endsection
