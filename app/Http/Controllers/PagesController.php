@@ -37,7 +37,15 @@ class PagesController extends Controller
     // The view for the Services Page
     public function services() {
 
-        return view('pages.services');
+        // Array to be passed into the view
+        $data = array(
+
+            'title' => 'Services',
+            'services' => ['Web Designs', 'Programming', 'SEO']
+
+        );
+
+        return view('pages.services')->with($data);
 
     }
 

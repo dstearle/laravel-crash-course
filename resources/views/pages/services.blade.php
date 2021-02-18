@@ -2,8 +2,24 @@
 
 @section('content')
 
-    <h1>Services</h1>
+    {{-- Title --}}
+    <h1>{{ $title }}</h1>
 
-    <p>This is the services page...</p>
+    {{-- If there are any items in the services array show content --}}
+    @if(count($services) > 0)
+
+        {{-- List of items in the services array --}}
+        <ul>
+
+            {{-- Foreach loop in the services array --}}
+            @foreach ($services as $service)
+
+                <li>{{ $service }}</li>
+                
+            @endforeach
+
+        </ul>
+
+    @endif
     
 @endsection
