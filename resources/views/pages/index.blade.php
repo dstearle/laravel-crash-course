@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Laravel Crash Course</h1>
+    <h1>{{ $title }}</h1>
 
     <p>A basic Laravel application to brush up on the basics...</p>
     

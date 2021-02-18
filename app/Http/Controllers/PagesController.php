@@ -14,7 +14,13 @@ class PagesController extends Controller
     // }
     public function index() {
 
-        return view('pages.index');
+        // String to be passed into the view
+        $title = 'Welcome to Laravel!';
+
+        // Example One: passing in string to view
+        // return view('pages.index', compact('title'));
+        // Example Two: passing in string to view
+        return view('pages.index')->with('title', $title);
 
     }
 
